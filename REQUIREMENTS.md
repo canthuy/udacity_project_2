@@ -10,7 +10,7 @@ These are the notes from a meeting with the frontend developer that describe wha
 
 - Index: `'/products' [GET]`
 - Show: `'/product/:id' [GET]`
-- Create (args: Product)[token required]: `'/product' [POST] (token)`
+- Create [token required]: `'/product' [POST] (token)`
 
 #### Users
 
@@ -36,7 +36,7 @@ These are the notes from a meeting with the frontend developer that describe wha
 - category
 
 ```
-CREATE TABLE products
+TABLE products
 (
     name VARCHAR(200),
     price NUMERIC,
@@ -53,7 +53,7 @@ CREATE TABLE products
 - password
 
 ```
-CREATE TABLE users
+TABLE users
 (
     firstName VARCHAR(50),
     lastName VARCHAR(50),
@@ -71,7 +71,7 @@ CREATE TABLE users
 - status of order (active or complete)
 
 ```
-CREATE TABLE orders
+TABLE orders
 (
     userId INTEGER,
     productId INTEGER,
