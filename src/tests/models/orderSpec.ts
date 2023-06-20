@@ -20,4 +20,34 @@ describe('Product Model', () => {
   it('get current orders by user', () => {
     expect(orderStore.getCurrentOrderByUser).toBeDefined();
   });
+
+  it('create order test', async () => {
+    const result = await orderStore.create({
+      productId: 1,
+      quantity: 1,
+      status: 'active',
+      userId: 1,
+    });
+    expect(result.productId).toEqual(1);
+  });
+
+  it('getCurrentOrderByUser test', async () => {
+    const result = await orderStore.getCurrentOrderByUser(1);
+    expect(result.length).toBeGreaterThan(0);
+  });
+
+  it('getOrderCompleteByUser test', async () => {
+    const result = await orderStore.getOrderCompleteByUser(1);
+    expect(result.length).toEqual(0);
+  });
+
+  it('getOrderActiveByUser test', async () => {
+    const result = await orderStore.getOrderActiveByUser(1);
+    expect(result.length).toBeGreaterThan(0);
+  });
+
+  it('getOrderActiveByUser test', async () => {
+    const result = await orderStore.getOrderByUser(1);
+    expect(result.length).toBeGreaterThan(0);
+  });
 });

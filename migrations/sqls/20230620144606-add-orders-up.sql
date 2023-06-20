@@ -1,0 +1,11 @@
+CREATE TABLE orders 
+(
+    userId INTEGER, 
+    productId INTEGER, 
+    quantity INTEGER, 
+    status VARCHAR(20), 
+    id SERIAL PRIMARY KEY,
+
+    FOREIGN KEY (productId) REFERENCES products(id) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (userId) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE
+)

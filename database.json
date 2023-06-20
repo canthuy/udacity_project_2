@@ -9,7 +9,7 @@
     "test": {
       "driver": "pg",
       "host": "127.0.0.1",
-      "database": "udacity_project_2",
+      "database": "udacity_project_2_test",
       "user": "udacity_thuyct",
       "password": "123456"
     }
