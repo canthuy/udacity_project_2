@@ -4,6 +4,12 @@
 - Build: ```npm run build```
 - Test: ```npm run test```
 
+* **Paradigm:** C is a procedural programming language, while C++ supports both procedural and object-oriented programming (OOP).
+* **Data Abstraction:** C++ offers data abstraction through classes and objects, which is not present in C.
+* **Encapsulation:** C++ encapsulates data and methods within classes, providing better data security than C.
+* **Inheritance:** C++ supports inheritance, allowing for code reusability, a feature absent in C.
+
+
 ## 2. Set up Database
 ### Create Databases
 - connect to the default postgres database as the server's root user `psql -U postgres`
